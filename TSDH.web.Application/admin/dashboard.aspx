@@ -7,33 +7,14 @@
     <title>Dashboard</title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="../Content/fontawesome5.13.0/css/all.css" rel="stylesheet" type="text/css" />
-    <link href="../Content/"  rel="stylesheet" type="text/css" />
+    <link href="../Content/admin.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <form id="form1" runat="server ">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row ">
-            <div class="col-md-2">
-                <ul class="nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-th-large fa-2x"></i>
-                        </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown1">
-
-                            <a class="nav-link active" href="/admin/Dashboard">Dashboard</a>
-
-                            <a class="nav-link" href="/admin/THPTQG">THPT Quốc Gia</a>
-                            <a class="nav-link" href="/admin/HocBa">Học Bạ</a>
-                             <a class="nav-link" href="/admin/HocBa">Ngành</a>
-                            <a class="nav-link" href="/admin/">Khối</a>
-                            <a class="nav-link" href="/admin/">Contact</a>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="col-md-10">
+    <form id="form1" runat="server" class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row p-0">
+            <div class="col-md-2"></div>
+            <div class="col-md-10 py-2 border-left">
                 <ul class="nav collapse navbar-collapse d-flex justify-content-end">
                     <li class="nav-item dropdown ">
                         <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -70,40 +51,55 @@
                 </ul>
             </div>
         </nav>
-        <div class="row " style="height: 90vh;">
-           
-            <div class="col-md-12 my-3">
-                    <table class="table table-borderless table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-12">
+        <div class="row" style="height: 90vh;">
+            <div class="col-md-2 bg-dark ">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10 p-3">
+                <table class="table table-borderless table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="col-md-12" style="padding: unset; margin: unset;">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item">
@@ -122,10 +118,8 @@
                         </ul>
                     </nav>
                 </div>
-
-
+            </div>
         </div>
-
     </form>
     <script src="../Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
     <script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>

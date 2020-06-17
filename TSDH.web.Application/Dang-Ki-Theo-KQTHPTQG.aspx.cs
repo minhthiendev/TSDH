@@ -13,5 +13,19 @@ namespace TSDH.web.Application
         {
 
         }
+
+       
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string cmnd = Request.Form.Get("cmnd");
+            Response.Write("------------------------------------");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string cmnd = Request.Form.Get("cmnd");
+            Response.Write("------------------------------------");
+        }
     }
 }

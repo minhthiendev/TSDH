@@ -13,6 +13,9 @@
             font-size: large;
             font-weight: bold;
         }
+        .active{
+           color:deeppink !important;
+       }
     </style>
 </head>
 <body>
@@ -20,7 +23,7 @@
          <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
-                <img src="/images/logo.png" alt="" width="200" /></a>
+                <img src="/images/logo.png" alt="" height="100" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,12 +35,12 @@
                         <a class="nav-link " href="/">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/ThongTinTuyerSinh">Thông Tin Tuyển Sinh</a>
+                        <a class="nav-link active" href="/ThongTinTuyerSinh">Thông Tin Tuyển Sinh</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng kí  xét tuyển
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Dang-Ki-Theo-KQTHPTQG">Tuyến sinh theo KQ thi THPTQG</a>
                             <div class="dropdown-divider"></div>
 
@@ -47,7 +50,7 @@
                     <li class="nav-item">
                         <a class="nav-link " href="/TraCuu">Kết quả tuyển sinh</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-5">
                         <a class="nav-link " href="/LienHe">Liên hệ</a>
                     </li>
                 </ul>
@@ -88,7 +91,7 @@
                 <div class="row">
                     <div class="col-md-4 p-0">
                         <div class="col-md-12">
-                            <h4 class="py-5"><a> <img src="/images/logo.png" alt="" width="200" /></a></h4>
+                            <h4 class="py-5"><a> <img src="/images/logo.png" alt="" height="100" /></a></h4>
                         </div>
                         <div class="col-md-12 text-light">
                             Địa chỉ:236B Lê Văn Sỹ, P. 1, Q. Tân Bình, TP. Hồ Chí Minh

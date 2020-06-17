@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Index</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
     <style>
        nav a {
             color: #a6bff1 !important;
@@ -14,6 +14,9 @@
             font-size: large;
             font-weight: bold;
         }
+       .active{
+           color:deeppink !important;
+       }
     </style>
 </head>
 
@@ -23,7 +26,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
-                <img src="/images/logo.png" alt="" width="200" /></a>
+                <img src="/images/logo.png" alt="" height="100" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,7 +35,7 @@
             <div class="collapse navbar-collapse nav justify-content-end  " id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="/">Trang chủ</a>
+                        <a class="nav-link active" href="/">Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/ThongTinTuyerSinh">Thông Tin Tuyển Sinh</a>
@@ -40,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng kí  xét tuyển
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Dang-Ki-Theo-KQTHPTQG">Tuyến sinh theo KQ thi THPTQG</a>
                             <div class="dropdown-divider"></div>
 
@@ -50,9 +53,10 @@
                     <li class="nav-item">
                         <a class="nav-link " href="/TraCuu">Kết quả tuyển sinh</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-5">
                         <a class="nav-link " href="/LienHe">Liên hệ</a>
                     </li>
+                  
                 </ul>
             </div>
         </nav>

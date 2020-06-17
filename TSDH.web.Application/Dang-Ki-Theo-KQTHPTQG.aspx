@@ -12,6 +12,10 @@
             font-size: large;
             font-weight: bold;
         }
+
+        .active {
+            color: deeppink !important;
+        }
     </style>
 </head>
 <body>
@@ -19,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
-                <img src="/images/logo.png" alt="" width="200" /></a>
+                <img src="/images/logo.png" alt="" height="90" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,9 +38,9 @@
                         <a class="nav-link " href="/ThongTinTuyerSinh">Thông Tin Tuyển Sinh</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng kí  xét tuyển
+                        <a class="nav-link active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng kí  xét tuyển
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Dang-Ki-Theo-KQTHPTQG">Tuyến sinh theo KQ thi THPTQG</a>
                             <div class="dropdown-divider"></div>
 
@@ -46,87 +50,95 @@
                     <li class="nav-item">
                         <a class="nav-link " href="/TraCuu">Kết quả tuyển sinh</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-5">
                         <a class="nav-link " href="/LienHe">Liên hệ</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="row d-flex justify-content-md-center py-5">
-            <div class="col-md-12 text-center ">
-                <h3 class="py-5">Thông tin cá nhân</h3>
-            </div>
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số CMND" />
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Họ tên" />
+        <div class="container">
+            <div class="row d-flex justify-content-md-center py-5">
+                <div class="col-md-12 text-center ">
+                    <h3>Thông tin cá nhân</h3>
+                </div>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số CMND" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Họ tên" />
 
-            <div class="col-md-5 col-md-5 m-3 form-control">
-                Giới tính : &nbsp;&nbsp;
+                <div class="col-md-5 col-md-5 m-3 form-control">
+                    Giới tính : &nbsp;&nbsp;
                 <input class="" type="radio" name="gender" id="nam" value="option1" checked />
-                <label class="form-check-label" for="nam">
-                    Nam
-                </label>
-                <input class="" type="radio" name="gender" id="nu" value="option1" />
-                <label class="form-check-label" for="nu">
-                    Nữ
-                </label>
-            </div>
+                    <label class="form-check-label" for="nam">
+                        Nam
+                    </label>
+                    <input class="" type="radio" name="gender" id="nu" value="option1" />
+                    <label class="form-check-label" for="nu">
+                        Nữ
+                    </label>
+                </div>
 
-            <div class="col-md-5 col-md-5 m-3 form-control">
-                <div class="row">
-                    <div class="col-12">
-                        <label class="col-md-3">Ngày Sinh : </label>
-                        <input type="date" class="col-md-8 px-0 border-0" />
+                <div class="col-md-5 col-md-5 m-3 form-control">
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="col-md-3">Ngày Sinh : </label>
+                            <input type="date" class="col-md-8 px-0 border-0" />
+                        </div>
+
                     </div>
 
                 </div>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Nơi sinh" title="" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Dân tộc" title="" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Hộ Khẩu thường Trú" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Đối tượng Ưu tiên" />
+
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Email" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số điện thoại" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Năm tốt nghiệp" />
+                <div class="col-md-5 col-md-4 m-3 "></div>
+
+
+                <div class="row">
+                    <label class="col-md-2 m-2 ">Lớp 10 : </label>
+                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
+                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+
+                    <label class="col-md-2 m-2 ">Lớp 11 : </label>
+                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
+                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+
+                    <label class="col-md-2 m-2 ">Lớp 12 : </label>
+                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
+                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                </div>
+            </div>
+            <div class="col-md-12 text-center ">
+                <h3 class="py-5">Nguyện vọng</h3>
+            </div>
+
+            <div class="row d-flex justify-content-md-center my-3">
+
+                <label class="col-md-2 text-center py-2">Nguyện vọng 1 : </label>
+                <input type="text" class="form-control col-md-5 col-md-4 mr-2" placeholder="Chọn ngành" />
+                <input type="text" class="form-control col-md-3 " placeholder="Chọn tổ hợp môn xét tuyển" />
+                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 1" />
+                <input type="text" class="form-control col-md-3 m-3" placeholder="Điểm Môn 2" />
+                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 3" />
 
             </div>
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Nơi sinh" title="" />
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Dân tộc" title="" />
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Hộ Khẩu thường Trú" />
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Đối tượng Ưu tiên" />
+            <div class="row d-flex justify-content-md-center my-3">
+                <label class="col-md-2 py-2 text-center">Nguyện vọng 2 : </label>
+                <input type="text" class="form-control col-md-5 col-md-4 mr-2" placeholder="Chọn ngành" />
+                <input type="text" class="form-control col-md-3" placeholder="Chọn tổ hợp môn xét tuyển" />
+                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 1" />
+                <input type="text" class="form-control col-md-3 m-3" placeholder="Điểm Môn 2" />
+                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 3" />
 
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Email" />
-            <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số điện thoại" />
-
-
-
-            <label class="col-md-2  m-2 ">Lớp 10 : </label>
-            <input type="text" class="form-control col-md-6 col-md-8 m-2" placeholder="Tên trường" />
-
-            <label class="col-md-2 m-2 ">Lớp 11 : </label>
-            <input type="text" class="form-control col-md-6 col-md-8 m-2" placeholder="Tên trường" />
-
-            <label class="col-md-2 m-2 ">Lớp 12 : </label>
-            <input type="text" class="form-control col-md-6 col-md-8 m-2" placeholder="Tên trường" />
-        </div>
-        <div class="col-md-12 text-center ">
-            <h3 class="py-5">Nguyện vọng</h3>
-        </div>
-
-        <div class="row d-flex justify-content-md-center my-3">
-
-            <label class="col-md-2 text-center py-2">Nguyện vọng 1 : </label>
-            <input type="text" class="form-control col-md-5 col-md-4 mr-2" placeholder="Chọn ngành" />
-            <input type="text" class="form-control col-md-3 " placeholder="Chọn tổ hợp môn xét tuyển" />
-            <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 1" />
-            <input type="text" class="form-control col-md-3 m-3" placeholder="Điểm Môn 2" />
-            <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 3" />
-
-        </div>
-        <div class="row d-flex justify-content-md-center my-3">
-            <label class="col-md-2 py-2 text-center">Nguyện vọng 2 : </label>
-            <input type="text" class="form-control col-md-5 col-md-4 mr-2" placeholder="Chọn ngành" />
-            <input type="text" class="form-control col-md-3" placeholder="Chọn tổ hợp môn xét tuyển" />
-            <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 1" />
-            <input type="text" class="form-control col-md-3 m-3" placeholder="Điểm Môn 2" />
-            <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 3" />
-
-        </div>
+            </div>
 
 
-        <div class="row d-flex justify-content-md-center py-5">
-            <button class="btn btn-outline-success col-md-2 " type="submit">Đăng kí</button>
+            <div class="row d-flex justify-content-md-center py-5">
+                <asp:Button ID="Button2" runat="server" Text="Đăng Kí" OnClick="Button2_Click"/>
+            </div>
         </div>
         <!--footer -->
         <div class="row py-5 bg-dark">
@@ -136,7 +148,7 @@
                     <div class="col-md-4 p-0">
                         <div class="col-md-12">
                             <h4 class="py-5"><a>
-                                <img src="/images/logo.png" alt="" width="200" /></a></h4>
+                                <img src="/images/logo.png" alt="" height="100" /></a></h4>
                         </div>
                         <div class="col-md-12 text-light">
                             Địa chỉ:236B Lê Văn Sỹ, P. 1, Q. Tân Bình, TP. Hồ Chí Minh
