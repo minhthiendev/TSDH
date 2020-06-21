@@ -20,8 +20,8 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server" class="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <form id="form1" runat="server" class="container-fluid">
+        <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" alt="" height="90" /></a>
@@ -58,21 +58,20 @@
             </div>
         </nav>
         <div class="container">
-            <div class="row d-flex justify-content-md-center py-5">
+             <div class="row d-flex justify-content-md-center py-5">
                 <div class="col-md-12 text-center ">
                     <h3>Thông tin cá nhân</h3>
                 </div>
-
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số CMND" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Họ tên" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " id="cmnd" name="cmnd" placeholder="Số CMND" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hoten" placeholder="Họ tên" required/>
 
                 <div class="col-md-5 col-md-5 m-3 form-control">
                     Giới tính : &nbsp;&nbsp;
-                <input class="" type="radio" name="gender" id="nam" value="option1" checked="" />
+                <input class="" type="radio" name="gioitinh" id="nam" value="nam" checked required/>
                     <label class="form-check-label" for="nam">
                         Nam
                     </label>
-                    <input class="" type="radio" name="gender" id="nu" value="option1" />
+                    <input class="" type="radio" name="gioitinh" id="nu" value="nu" required/>
                     <label class="form-check-label" for="nu">
                         Nữ
                     </label>
@@ -81,92 +80,102 @@
                 <div class="col-md-5 col-md-5 m-3 form-control">
                     <div class="row">
                         <div class="col-12">
-                            <label class="col-md-3">Ngày Sinh : </label>
-                            <input type="date" class="col-md-8 px-0 border-0" />
+                            <label class="col-md-3">Ngày Sinh </label>
+                            <input type="date" name="ngaysinh" class="col-md-8 px-0 border-0" required/>
                         </div>
 
                     </div>
 
                 </div>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Nơi sinh" title="" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Dân tộc" title="" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Hộ Khẩu thường Trú" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Đối tượng Ưu tiên" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="noisinh" placeholder="Nơi sinh" title="" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="dantoc" placeholder="Dân tộc" title="" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hokhau" placeholder="Hộ Khẩu thường Trú" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="doituongUT" placeholder="Đối tượng Ưu tiên" required />
 
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Email" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số điện thoại" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Năm tốt nghiệp" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="email" placeholder="Email" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="phone" placeholder="Số điện thoại" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="namtotnghiep" placeholder="Năm tốt nghiệp" required/>
                 <div class="col-md-5 col-md-4 m-3 "></div>
 
 
                 <div class="row">
-                    <label class="col-md-2 m-2 ">Lớp 10 : </label>
-                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
-                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                    <label class="col-md-2 m-2 ">Lớp 10 </label>
+                    <input type="text" class="form-control col-md-2 m-2" name="hk10" placeholder="Hạnh kiểm" required/>
+                    <input type="text" class="form-control col-md-7 m-2" name="truong10" placeholder="Tên trường" required/>
 
-                    <label class="col-md-2 m-2 ">Lớp 11 : </label>
-                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
-                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                    <label class="col-md-2 m-2 ">Lớp 11  </label>
+                    <input type="text" class="form-control col-md-2 m-2" name="hk11" placeholder="Hạnh kiểm" required/>
+                    <input type="text" class="form-control col-md-7 m-2" name="truong11" placeholder="Tên trường" required/>
 
-                    <label class="col-md-2 m-2 ">Lớp 12 : </label>
-                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
-                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                    <label class="col-md-2 m-2 ">Lớp 12 </label>
+                    <input type="text" class="form-control col-md-2 m-2" name="hk12" placeholder="Hạnh kiểm" required/>
+                    <input type="text" class="form-control col-md-7 m-2" name="truong12" placeholder="Tên trường" required/>
                 </div>
             </div>
             <div class="col-md-12 text-center ">
                 <h3 class="py-5">Nguyện vọng</h3>
             </div>
             <div class="row d-flex justify-content-md-center">
-               
-                <input type="text" class="form-control col-md-4 mr-2" placeholder="Chọn ngành" />
-                <input type="text" class="form-control col-md-3 " placeholder="Chọn tổ hợp môn xét tuyển" />
+                <div class="form-control col-md-4 mr-2">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="100%" CssClass="border-0">
+                        <asp:ListItem>Chọn Ngành</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <select class="form-control col-md-3" onchange="subjectChanged(this)" name="tohop">
+                    <option selected>Chọn tổ hợp môn</option>
+                    <option value="A00">A00</option>
+                    <option value="A01">A01</option>
+                    <option value="B00">B00</option>
+                    <option value="C00">C00</option>
+                    <option value="D01">D01</option>
+                </select>
             </div>
             <div class="row d-flex justify-content-md-center my-3">
-                <label class="col-md-1 py-2">Lớp 10 : </label>
+                <label class="col-md-1 py-2">Lớp 10 </label>
 
-                <label class="col-md-1 py-2">Môn 1 : </label>
-                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" />
-                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" />
+                <label class="col-md-1 py-2 subject1">Môn 1 </label>
+                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1"  name="m1101" required/>
+                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" name="m1102" required/>
 
-                <label class="col-md-1 py-2">Môn 2 : </label>
-                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" />
-                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" />
+                <label class="col-md-1 py-2 subject2">Môn 2 </label>
+                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" name="m2101" required/>
+                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" name="m2102" required/>
 
-                <label class="col-md-1 py-2">Môn 3 : </label>
-                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" />
-                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" />
+                <label class="col-md-1 py-2 subject3">Môn 3</label>
+                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" name="m3101" required/>
+                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" name="m3102" required/>
 
             </div>
 
             <div class="row d-flex justify-content-md-center my-3">
 
-                <label class="col-md-1 py-2">Lớp 11 : </label>
+                <label class="col-md-1 py-2">Lớp 11  </label>
 
-                <label class="col-md-1 py-2">Môn 1 : </label>
-                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" />
-                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" />
+                <label class="col-md-1 py-2 subject1">Môn 1 </label>
+                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" name="m1111"required/>
+                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2"  name="m1112" required/>
 
-                <label class="col-md-1 py-2">Môn 2 : </label>
-                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" />
-                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" />
+                <label class="col-md-1 py-2 subject2">Môn 2 </label>
+                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1"  name="m2111" required/>
+                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2"  name="m2112" required/>
 
-                <label class="col-md-1 py-2">Môn 3 : </label>
-                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1" />
-                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" />
+                <label class="col-md-1 py-2 subject3">Môn 3  </label>
+                <input type="text" class="form-control col-md-1 mr-2" placeholder="Học Kì 1"  name="m3111" required/>
+                <input type="text" class="form-control col-md-1" placeholder="Học Kì 2" name="m3112" required/>
 
             </div>
             <div class="row d-flex justify-content-md-center my-3">
                 <label class="col-md-1 py-2">Lớp 12 : </label>
 
 
-                <label class="col-md-1 py-2">Môn 1 : </label>
-                <input type="text" class="form-control col-md-2 mr-2" placeholder="Học Kì 1" />
+                <label class="col-md-1 py-2 subject1">Môn 1  </label>
+                <input type="text" class="form-control col-md-2 mr-2" placeholder="Học Kì 1" name="m1121" required/>
 
-                <label class="col-md-1 py-2">Môn 2 : </label>
-                <input type="text" class="form-control col-md-2 mr-2" placeholder="Học Kì 1" />
+                <label class="col-md-1 py-2 subject2">Môn 2  </label>
+                <input type="text" class="form-control col-md-2 mr-2" placeholder="Học Kì 1" name="m2121" required/>
 
-                <label class="col-md-1 py-2">Môn 3 : </label>
-                <input type="text" class="form-control col-md-2 mr-2" placeholder="Học Kì 1" />
+                <label class="col-md-1 py-2 subject3">Môn 3</label>
+                <input type="text" class="form-control col-md-2 mr-2" placeholder="Học Kì 1" name="m3121" required/>
 
                 <div class="form-control col-md-4 my-2 text-center border-0"></div>
                 <input type="text" class="form-control col-md-4 my-2 text-center" placeholder="Tổng" disabled />
@@ -175,26 +184,19 @@
             </div>
             <div class="row">
                 <div class=" col-md-4">
-
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFileLangHTML" />
-                        <label class="custom-file-label" for="customFileLangHTML" data-browse="Chọn ảnh">Ảnh học bạ lớp 10</label>
-                    </div>
+                      <label>Ảnh học bạ Lớp 10</label>
+                   <asp:FileUpload ID="FileUpload1" runat="server" Width="337px" />
 
 
                 </div>
                 <div class=" col-md-4">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" />
-                        <label class="custom-file-label" for="customFile">ảnh học bạ lớp 11</label>
-                    </div>
+                       <label>Ảnh học bạ Lớp 11</label>
+                     <asp:FileUpload ID="FileUpload2" runat="server" Width="337px" />
 
                 </div>
                 <div class=" col-md-4">
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" />
-                        <label class="custom-file-label" for="customFile">Ảnh học bạ lớp 12</label>
-                    </div>
+                       <label>Ảnh học bạ Lớp 12</label>
+                    <asp:FileUpload ID="FileUpload3" runat="server" Width="337px" />
 
                 </div>
             </div>
@@ -202,8 +204,8 @@
 
 
 
-            <div class="row d-flex justify-content-md-center my-1 py-5">
-                <button class="btn btn-outline-success col-md-2 " type="submit">Đăng kí</button>
+            <div class="row d-flex justify-content-md-center py-5">
+                <asp:Button ID="Button2" runat="server" Text="Đăng Kí" OnClick="Button2_Click" class="btn btn-outline-success col-md-2 " />
             </div>
         </div>
         <!--footer -->
@@ -263,7 +265,6 @@
 
         </div>
         <!--end footer -->
-    </form>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -287,9 +288,85 @@
         attribution="setup_tool"
         page_id="106532931079209"
         theme_color="#13cf13">
+       
     </div>
     <script src="/Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
     <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
     <script src="/Scripts/popper.min.js" type="text/javascript"></script>
-</body>
+    <script type="text/javascript">
+
+        function subjectChanged(obj) {
+            const subject1 = document.getElementsByClassName('subject1');
+            const subject2 = document.getElementsByClassName('subject2');
+            const subject3 = document.getElementsByClassName('subject3');
+            let value = obj.value;
+
+            if (value === 'A00') {
+                subject1[0].innerHTML = "Toán";
+                subject1[1].innerHTML = "Toán";
+                subject1[2].innerHTML = "Toán";
+                subject2[0].innerHTML = "Lý";
+                subject2[1].innerHTML = "Lý";
+                subject2[2].innerHTML = "Lý";
+                subject3[0].innerHTML = "Hóa";
+                subject3[1].innerHTML = "Hóa";
+                subject3[2].innerHTML = "Hóa";
+
+            }
+            else if (value === 'A01') {
+                subject1[0].innerHTML = "Toán";
+                subject1[1].innerHTML = "Toán";
+                subject1[2].innerHTML = "Toán";
+                subject2[0].innerHTML = "Lý";
+                subject2[1].innerHTML = "Lý";
+                subject2[2].innerHTML = "Lý";
+                subject3[0].innerHTML = "Anh Văn";
+                subject3[1].innerHTML = "Anh Văn";
+                subject3[2].innerHTML = "Anh Văn";
+            } else if (value === 'B00') {
+                subject1[0].innerHTML = "Toán";
+                subject1[1].innerHTML = "Toán";
+                subject1[2].innerHTML = "Toán";
+                subject2[0].innerHTML = "Hóa";
+                subject2[1].innerHTML = "Hóa";
+                subject2[2].innerHTML = "Hóa";
+                subject3[0].innerHTML = "Sinh";
+                subject3[1].innerHTML = "Sinh";
+                subject3[2].innerHTML = "Sinh";
+            } else if (value === 'C00') {
+                subject1[0].innerHTML = "Ngữ văn";
+                subject1[1].innerHTML = "Ngữ văn";
+                subject1[2].innerHTML = "Ngữ Văn";
+                subject2[0].innerHTML = "Lịch Sử";
+                subject2[1].innerHTML = "Lịch Sử";
+                subject2[2].innerHTML = "Lịch Sử";
+                subject3[0].innerHTML = "Địa Lí";
+                subject3[1].innerHTML = "Địa Lí";
+                subject3[2].innerHTML = "Địa Lí";
+            } else if (value === 'D01') {
+                subject1[0].innerHTML = "Toán";
+                subject1[1].innerHTML = "Toán";
+                subject1[2].innerHTML = "Toán";
+                subject2[0].innerHTML = "Ngữ Văn";
+                subject2[1].innerHTML = "Ngữ Văn";
+                subject2[2].innerHTML = "Ngữ Văn";
+                subject3[0].innerHTML = "Anh Văn";
+                subject3[1].innerHTML = "Anh Văn";
+                subject3[2].innerHTML = "AnhVăn";
+            } else {
+                subject1[0].innerHTML = "Môn 1";
+                subject1[1].innerHTML = "Môn 1";
+                subject1[2].innerHTML = "Môn 1";
+                subject2[0].innerHTML = "Môn 2";
+                subject2[1].innerHTML = "Môn 2";
+                subject2[2].innerHTML = "Môn 2";
+                subject3[0].innerHTML = "Môn 3";
+                subject3[1].innerHTML = "Môn 3";
+                subject3[2].innerHTML = "Môn 3";
+            }
+        }
+
+    </script>
+    </form>
+    </body>
 </html>

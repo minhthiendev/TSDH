@@ -19,8 +19,8 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <form id="form1" runat="server" class="container-fluid">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top row">
 
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" alt="" height="100" /></a>

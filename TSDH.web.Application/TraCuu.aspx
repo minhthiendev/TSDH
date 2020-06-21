@@ -15,14 +15,15 @@
             font-size: large;
             font-weight: bold;
         }
-         .active{
-           color:deeppink !important;
-       }
+
+        .active {
+            color: deeppink !important;
+        }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <form id="form1" runat="server" class="container-fluid">
+        <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" alt="" height="100" /></a>
@@ -61,16 +62,52 @@
         <div class="container py-5">
             <div class="row py-5">
                 <div class="col-md-12 text-center">
-                    <h4>Tra cứu kết quả</h4>
+                    <h4>Tra cứu kết quả
+                    </h4>
                     <small>Nhập chính xác chứng minh nhân dân để tra cứu kết quả </small>
                 </div>
                 <div class="col-md-12 my-3">
+                    <div class="col-md-12 text-center my-4 text-success">
+                        <h6>
+                            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                        </h6>
 
-                    <div class="d-flex justify-content-center h-100">
+                    </div>
+
+                    <div class="d-flex justify-content-center ">
                         <div class="searchbar">
-                            <input class="search_input" type="text" name="" placeholder="Nhập chứng minh thư..." />
-                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                            <input class="search_input" type="text" name="cmnd" placeholder="Nhập chứng minh thư..." style="background: unset!important;" />
+                            <%--<button href="#" class="search_icon"><i class="fas fa-search" style="width: 3px"></i></button>--%>
+                            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="search_input m-5" OnClick="Search">
+                                <i class="fas fa-search"></i></asp:LinkButton>
+                            <%--<asp:Button ID="Button1" runat="server" CssClass="search_icon" />--%>
                         </div>
+                    </div>
+                    <div class="col-md-12 my-5">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="100%" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+                            <Columns>
+                                <asp:BoundField HeaderText="cmnd" DataField="cmnd" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Họ tên" DataField="hoten" ReadOnly="True" />
+                                <asp:BoundField HeaderText="ngày sinh" DataField="ngaysinh" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Giới tính" DataField="gioitinh" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Nơi Sinh" DataField="noisinh" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Dân tộc" DataField="dantoc" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Hộ Khẩu" DataField="hokhau" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Đối tượng ưu tiên" DataField="doituongUT" ReadOnly="True" />
+                                <asp:BoundField HeaderText="email" DataField="email" ReadOnly="True" />
+                                <asp:BoundField HeaderText="phone" DataField="phone" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Ngành" DataField="Nganh" ReadOnly="True" />
+                                <asp:BoundField HeaderText="Điểm trúng tuyển" DataField="Diemtrungtuyen" ReadOnly="True" />
+                            </Columns>
+                            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                            <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                            <SortedDescendingHeaderStyle BackColor="#242121" />
+                        </asp:GridView>
                     </div>
                 </div>
             </div>
@@ -135,35 +172,40 @@
         </div>
         <!--end footer -->
 
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root">
+        </div>
+
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v7.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="106532931079209"
+            theme_color="#13cf13">
+        </div>
+
+        <script src="/Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
+        <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/Scripts/popper.min.js" type="text/javascript"></script>
+
+
+
     </form>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v7.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="106532931079209"
-        theme_color="#13cf13">
-    </div>
-
-    <script src="/Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
-    <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
-    <script src="/Scripts/popper.min.js" type="text/javascript"></script>
 
 </body>
 </html>

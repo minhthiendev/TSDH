@@ -19,8 +19,8 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <form id="form1" runat="server" class="container-fluid">
+        <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" alt="" height="90" /></a>
@@ -40,7 +40,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng kí  xét tuyển
                         </a>
-                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Dang-Ki-Theo-KQTHPTQG">Tuyến sinh theo KQ thi THPTQG</a>
                             <div class="dropdown-divider"></div>
 
@@ -61,16 +61,16 @@
                 <div class="col-md-12 text-center ">
                     <h3>Thông tin cá nhân</h3>
                 </div>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số CMND" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Họ tên" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " id="cmnd" name="cmnd" placeholder="Số CMND" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hoten" placeholder="Họ tên" />
 
                 <div class="col-md-5 col-md-5 m-3 form-control">
                     Giới tính : &nbsp;&nbsp;
-                <input class="" type="radio" name="gender" id="nam" value="option1" checked />
+                <input class="" type="radio" name="gioitinh" id="nam" value="nam" checked />
                     <label class="form-check-label" for="nam">
                         Nam
                     </label>
-                    <input class="" type="radio" name="gender" id="nu" value="option1" />
+                    <input class="" type="radio" name="gioitinh" id="nu" value="nu" />
                     <label class="form-check-label" for="nu">
                         Nữ
                     </label>
@@ -80,35 +80,35 @@
                     <div class="row">
                         <div class="col-12">
                             <label class="col-md-3">Ngày Sinh : </label>
-                            <input type="date" class="col-md-8 px-0 border-0" />
+                            <input type="date" name="ngaysinh" class="col-md-8 px-0 border-0" />
                         </div>
 
                     </div>
 
                 </div>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Nơi sinh" title="" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Dân tộc" title="" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Hộ Khẩu thường Trú" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Đối tượng Ưu tiên" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="noisinh" placeholder="Nơi sinh" title="" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="dantoc" placeholder="Dân tộc" title="" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hokhau" placeholder="Hộ Khẩu thường Trú" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="doituongUT" placeholder="Đối tượng Ưu tiên" />
 
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Email" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Số điện thoại" />
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " placeholder="Năm tốt nghiệp" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="email" placeholder="Email" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="phone" placeholder="Số điện thoại" />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="namtotnghiep" placeholder="Năm tốt nghiệp" />
                 <div class="col-md-5 col-md-4 m-3 "></div>
 
 
                 <div class="row">
                     <label class="col-md-2 m-2 ">Lớp 10 : </label>
-                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
-                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                    <input type="text" class="form-control col-md-2 m-2" name="hk10" placeholder="Hạnh kiểm" />
+                    <input type="text" class="form-control col-md-7 m-2" name="truong10" placeholder="Tên trường" />
 
                     <label class="col-md-2 m-2 ">Lớp 11 : </label>
-                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
-                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                    <input type="text" class="form-control col-md-2 m-2" name="hk11" placeholder="Hạnh kiểm" />
+                    <input type="text" class="form-control col-md-7 m-2" name="truong11" placeholder="Tên trường" />
 
                     <label class="col-md-2 m-2 ">Lớp 12 : </label>
-                    <input type="text" class="form-control col-md-2 m-2" placeholder="Hạnh kiểm" />
-                    <input type="text" class="form-control col-md-7 m-2" placeholder="Tên trường" />
+                    <input type="text" class="form-control col-md-2 m-2" name="hk12" placeholder="Hạnh kiểm" />
+                    <input type="text" class="form-control col-md-7 m-2" name="truong12" placeholder="Tên trường" />
                 </div>
             </div>
             <div class="col-md-12 text-center ">
@@ -118,26 +118,59 @@
             <div class="row d-flex justify-content-md-center my-3">
 
                 <label class="col-md-2 text-center py-2">Nguyện vọng 1 : </label>
-                <input type="text" class="form-control col-md-5 col-md-4 mr-2" placeholder="Chọn ngành" />
-                <input type="text" class="form-control col-md-3 " placeholder="Chọn tổ hợp môn xét tuyển" />
-                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 1" />
-                <input type="text" class="form-control col-md-3 m-3" placeholder="Điểm Môn 2" />
-                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 3" />
+                <div class="form-control col-md-5 col-md-4 mr-2">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="100%" CssClass="border-0">
+                        <asp:ListItem>Chọn Ngành</asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <select class="form-control col-md-3" onchange="subjectChanged(this)" name="tohop1">
+                    <option selected>Chọn tổ hợp môn</option>
+                    <option value="A00">A00</option>
+                    <option value="A01">A01</option>
+                    <option value="B00">B00</option>
+                    <option value="C00">C00</option>
+                    <option value="D01">D01</option>
+                </select>
+                <div class="row">
+                    <label id="subject1nv1" class="col-md-2">Môn 1 : </label>
+                    <input type="text" class="form-control col-md-2" placeholder="Nhập điểm" name="m1nv1"/>
+                    <label id="subject2nv1" class="col-md-2">Môn 1 : </label>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm"name="m2nv1"/>
+                    <label id="subject3nv1" class="col-md-2">Môn 1 : </label>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm " name="m3nv1" />
+                </div>
 
             </div>
             <div class="row d-flex justify-content-md-center my-3">
                 <label class="col-md-2 py-2 text-center">Nguyện vọng 2 : </label>
-                <input type="text" class="form-control col-md-5 col-md-4 mr-2" placeholder="Chọn ngành" />
-                <input type="text" class="form-control col-md-3" placeholder="Chọn tổ hợp môn xét tuyển" />
-                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 1" />
-                <input type="text" class="form-control col-md-3 m-3" placeholder="Điểm Môn 2" />
-                <input type="text" class="form-control col-md-3 m-3 " placeholder="Điểm Môn 3" />
+                <div class="form-control col-md-5 col-md-4 mr-2">
+                    <asp:DropDownList ID="DropDownList3" runat="server" Width="100%" CssClass="border-0">
+                        <asp:ListItem>Chọn Ngành</asp:ListItem>
+
+                    </asp:DropDownList>
+                </div>
+                <select class="form-control col-md-3" onchange="subjectChanged2(this)" name="tohop2">
+                    <option selected>Chọn tổ hợp môn</option>
+                    <option value="A00">A00</option>
+                    <option value="A01">A01</option>
+                    <option value="B00">B00</option>
+                    <option value="C00">C00</option>
+                    <option value="D01">D01</option>
+                </select>
+                <div class="row">
+                    <label id="subject1nv2" class="col-md-2">Môn 1 : </label>
+                    <input type="text" class="form-control col-md-2" placeholder="Nhập điểm"  name="m1nv2"/>
+                    <label id="subject2nv2" class="col-md-2">Môn 1 : </label>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m2nv2"/>
+                    <label id="subject3nv2" class="col-md-2">Môn 1 : </label>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m3nv2"/>
+                </div>
 
             </div>
 
 
             <div class="row d-flex justify-content-md-center py-5">
-                <asp:Button ID="Button2" runat="server" Text="Đăng Kí" OnClick="Button2_Click"/>
+                <asp:Button ID="Button2" runat="server" Text="Đăng Kí" OnClick="Button2_Click" class="btn btn-outline-success col-md-2 " />
             </div>
         </div>
         <!--footer -->
@@ -193,37 +226,101 @@
             <div class="col-md-12 text-center">
                 <h5 class="py-3">Copyright 2020 © Trường ĐH Tài nguyên và Môi trường Tp. HCM</h5>
             </div>
-
-
         </div>
         <!--end footer -->
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v7.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="106532931079209"
+            theme_color="#13cf13">
+        </div>
+        <script src="/Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
+        <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/Scripts/popper.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+
+            function subjectChanged(obj) {
+                const subject1 = document.getElementById('subject1nv1');
+                const subject2 = document.getElementById('subject2nv1');
+                const subject3 = document.getElementById('subject3nv1');
+                let value = obj.value;
+
+                if (value === 'A00') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Lý";
+                    subject3.innerHTML = "Hóa";
+                }
+                else if (value === 'A01') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Lý";
+                    subject3.innerHTML = "Anh Văn";
+                } else if (value === 'B00') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Hóa";
+                    subject3.innerHTML = "Sinh";
+                } else if (value === 'C00') {
+                    subject1.innerHTML = "Ngữ văn";
+                    subject2.innerHTML = "Lịch sử";
+                    subject3.innerHTML = "Địa lí";
+                } else if (value === 'D01') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Ngữ văn";
+                    subject3.innerHTML = "Anh Văn";
+                }
+            }
+            function subjectChanged2(obj) {
+                const subject1 = document.getElementById('subject1nv2');
+                const subject2 = document.getElementById('subject2nv2');
+                const subject3 = document.getElementById('subject3nv2');
+                let value = obj.value;
+
+                if (value === 'A00') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Lý";
+                    subject3.innerHTML = "Hóa";
+                }
+                else if (value === 'A01') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Lý";
+                    subject3.innerHTML = "Anh Văn";
+                } else if (value === 'B00') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Hóa";
+                    subject3.innerHTML = "Sinh";
+                } else if (value === 'C00') {
+                    subject1.innerHTML = "Ngữ văn";
+                    subject2.innerHTML = "Lịch sử";
+                    subject3.innerHTML = "Địa lí";
+                } else if (value === 'D01') {
+                    subject1.innerHTML = "Toán";
+                    subject2.innerHTML = "Ngữ văn";
+                    subject3.innerHTML = "Anh Văn";
+                }
+            }
+
+        </script>
+
+
+
+
     </form>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v7.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="106532931079209"
-        theme_color="#13cf13">
-    </div>
-    <script src="/Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
-    <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
-    <script src="/Scripts/popper.min.js" type="text/javascript"></script>
 </body>
 </html>

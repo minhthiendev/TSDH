@@ -1,13 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Lienhe.aspx.cs" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Lienhe.aspx.cs" Inherits="TSDH.web.Application.Lienhe1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <title>Liên hệ</title>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/fontawesome5.13.0/css/all.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="./Content/fontawesome5.13.0/css/all.css" rel="stylesheet" type="text/css" />
     <style>
         nav a {
             color: #a6bff1 !important;
@@ -15,14 +15,15 @@
             font-size: large;
             font-weight: bold;
         }
-         .active{
-           color:deeppink !important;
-       }
+
+        .active {
+            color: deeppink !important;
+        }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <form id="form1" runat="server" class="container-fluid">
+        <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" alt="" height="100" /></a>
@@ -42,7 +43,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Đăng kí  xét tuyển
                         </a>
-                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/Dang-Ki-Theo-KQTHPTQG">Tuyến sinh theo KQ thi THPTQG</a>
                             <div class="dropdown-divider"></div>
 
@@ -63,6 +64,7 @@
 
                 <div class="col-md-6 my-3 py-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1947214392317!2d106.66429465071829!3d10.796393392270229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292dd8bceffd%3A0xcb9d638e4019bd43!2zMjM2QiDEkC4gTMOqIFbEg24gU-G7uSwgUGjGsOG7nW5nIDEsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1590327055009!5m2!1svi!2s" width="500" height="300" style="border: 0;" aria-hidden="false" tabindex="0"></iframe>
+
                 </div>
                 <div class="col-md-6 my-3">
                     <div class="col-md-12 text-center">
@@ -76,7 +78,7 @@
                         <!-- Name input-->
                         <div class="form-group">
                             <div class="col-md-12">
-                                <input id="name" name="name" type="text" placeholder="Your name" class="form-control" />
+                                <input id="name" name="hoten" type="text" placeholder="Your name" class="form-control" />
                             </div>
                         </div>
 
@@ -99,7 +101,8 @@
                         <!-- Form actions -->
                         <div class="form-group">
                             <div class="col-md-12 text-right">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+
+                                <asp:Button ID="Button1" runat="server" Text="Gửi" CssClass="btn btn-primary btn-lg" OnClick="Button1_Click" Style="margin-left: 0" />
                             </div>
                         </div>
 
@@ -195,6 +198,5 @@
     <script src="/Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
     <script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
     <script src="/Scripts/popper.min.js" type="text/javascript"></script>
-
 </body>
 </html>

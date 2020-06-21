@@ -154,21 +154,37 @@
                     </div>
                     <div class="col-md-4 p-0">
                         <div class="col-md-12 row" style="height: 20%">
-                            <div class="col-md-2">anc</div>
-                            <div class="col-md-10">anc</div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/250" alt="Alternate Text" width="100%"/>
+                            </div>
+                            <div class="col-md-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                         </div>
                         <div class="col-md-12 row" style="height: 20%">
-                            <div class="col-md-2">anc</div>
-                            <div class="col-md-10">anc</div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/250" alt="Alternate Text" width="100%"/>
+                            </div>
+                            <div class="col-md-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                         </div>
                         <div class="col-md-12 row" style="height: 20%">
-                            <div class="col-md-2">anc</div>
-                            <div class="col-md-10">anc</div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/250" alt="Alternate Text" width="100%"/>
+                            </div>
+                            <div class="col-md-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                         </div>
                         <div class="col-md-12 row" style="height: 20%">
-                            <div class="col-md-2">anc</div>
-                            <div class="col-md-10">anc</div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/250" alt="Alternate Text" width="100%"/>
+                            </div>
+                            <div class="col-md-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                        </div> 
+                        <div class="col-md-12 row" style="height: 20%">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/250" alt="Alternate Text" width="100%"/>
+                            </div>
+                            <div class="col-md-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                         </div>
+                        
+ 
                     </div>
                 </div>
             </div>

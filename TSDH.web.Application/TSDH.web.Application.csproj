@@ -1921,7 +1921,7 @@
     <Compile Include="Danh-Ki-Theo-Hoc-Ba.aspx.designer.cs">
       <DependentUpon>Danh-Ki-Theo-Hoc-Ba.aspx</DependentUpon>
     </Compile>
-    <Compile Include="data\dataConnection.cs" />
+    <Compile Include="DataConnection.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1986,6 +1986,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fontawesome5.13.0\less\brands.less" />
