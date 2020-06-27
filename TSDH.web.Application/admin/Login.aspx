@@ -32,10 +32,10 @@
 							<div class="row register-form">
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Username *" value="" />
+										<input type="text" class="form-control" placeholder="Username *" value="" name="username"/>
 									</div>
 									<div class="form-group">
-										<input type="password" class="form-control" placeholder="Password*" value="" />
+										<input type="password" class="form-control" placeholder="Password*" value="" name="password" />
 									</div>
 									<div class="form-group">
 										<input type="checkbox" name="remember" class="my-2"  value="" />
@@ -44,8 +44,7 @@
 									<div class="form-group">
 										<a href="">You forget your password ???</a>
 									</div>
-									 <input type="submit" class="btnRegister" value="Login" />
-
+									   <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btnRegister" OnClick="Button1_Click"/>
 								</div>
 							   
 							</div>
@@ -55,6 +54,7 @@
 				</div>
 			</div>
 		</div>
+	 
 	</form>
 </body>
 </html>

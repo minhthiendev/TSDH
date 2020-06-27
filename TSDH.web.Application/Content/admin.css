@@ -6,3 +6,11 @@ a:hover {
     color: hotpink;
 }
 
+.active{
+    color:hotpink;
+    text-decoration:underline;
+}
+.grid-view {
+    width: 100% !important;
+    overflow-x: scroll !important;
+}

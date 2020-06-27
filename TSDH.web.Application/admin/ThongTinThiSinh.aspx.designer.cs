@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TSDH.web.Application.Con_lau_moi_tim_duoc_trang_admin_nay_nha
+namespace TSDH.web.Application.admin
 {
 
 
-    public partial class THPTQG
+    public partial class WebForm1
     {
 
         /// <summary>

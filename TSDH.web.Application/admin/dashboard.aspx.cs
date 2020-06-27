@@ -11,7 +11,10 @@ namespace TSDH.web.Application.Con_lau_moi_tim_duoc_trang_admin_cua_a_nha
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["user"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }

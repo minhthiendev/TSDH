@@ -1,132 +1,105 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="THPTQG.aspx.cs" Inherits="TSDH.web.Application.Con_lau_moi_tim_duoc_trang_admin_nay_nha.THPTQG" %>
+﻿
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Quản Lí TS THPTQG</title>
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../Content/fontawesome5.13.0/css/all.css" rel="stylesheet" type="text/css" />
-    <link href="../Content/admin.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-         <nav class="navbar navbar-expand-lg navbar-dark bg-dark row ">
-            <div class="col-md-2">
-                <ul class="nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-th-large fa-2x"></i>
-                        </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown1">
-
-                            <a class="nav-link active" href="/Con-lau-moi-tim-duoc-trang-admin-nay-nha/Dashboard">Dashboard</a>
-
-                            <a class="nav-link" href="/admin/THPTQG">THPT Quốc Gia</a>
-                            <a class="nav-link" href="/admin/HocBa">Học Bạ</a>
-                            <a class="nav-link" href="/admin/HocBa">Ngành</a>
-                            <a class="nav-link" href="/admin/">Khối</a>
-                            <a class="nav-link" href="/admin/">Contact</a>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="col-md-10">
-                <ul class="nav collapse navbar-collapse d-flex justify-content-end">
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-search text-light"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right  p-0 d">
-                            <div class="d-flex">
-                                <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search" style="width: 200px" />
-                                <button class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
-                            </div>
-
-                        </div>
-
-
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fas fa-bell"></i><sup><span class="badge badge-danger">9</span></sup>
-                            <span class="sr-only">(current)</span></a>
+<%@ Page Title="Quản lí ts THPTQG" Language="C#" MasterPageFile="~/admin/admin.Master" AutoEventWireup="true" CodeBehind="THPTQG.aspx.cs" Inherits="TSDH.web.Application.Con_lau_moi_tim_duoc_trang_admin_nay_nha.THPTQG" %>
+<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
+      <div class="row" style="height: 90vh;">
+            <div class="col-md-2 bg-dark ">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="far fa-envelope"></i><sup><span class="badge badge-danger">9</span></sup></a>
+                        <a class="nav-link" href="/admin/ThongTinThiSinh">Hồ sơ thí sinh</a>
                     </li>
-
-                    <li class="nav-item ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i>
-                        </a>
-                        <div class="dropdown-menu-right dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/admin/profile">Profile</a>
-                            <a class="dropdown-item" href="/admin/setting">setting</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/admin/Login">Logout</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin/HocBa">Học Bạ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/admin/THPTQG">THPT Quốc Gia</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-        <div class="row " style="height: 90vh;">
-           
-            <div class="col-md-12 my-3">
-                    <table class="table table-borderless table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-12">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="col-md-10 p-3 grid-view">
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="cmnd" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" Width="1401px">
+                    <Columns>
+                        <asp:CommandField ButtonType="Image" CancelImageUrl="~/images/cancel.jpg" DeleteImageUrl="~/images/del_icon.png" EditImageUrl="~/images/edit_icon.png" SelectImageUrl="~/images/select.png" ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" UpdateImageUrl="~/images/check.jpg">
+                        <ControlStyle Width="30px" />
+                        </asp:CommandField>
+                        <asp:BoundField DataField="cmnd" HeaderText="Cmnd" ReadOnly="True" SortExpression="cmnd" />
+                        <asp:BoundField DataField="nv1" HeaderText="Nguyên vọng 1" SortExpression="nv1" />
+                        <asp:BoundField DataField="nv2" HeaderText="Nguyện vọng 2" SortExpression="nv2" />
+                        <asp:BoundField DataField="tohopnv1" HeaderText="Tổ hợp nv1" SortExpression="tohopnv1" />
+                        <asp:BoundField DataField="tohopnv2" HeaderText="Tổ hợp nv2" SortExpression="tohopnv2" />
+                        <asp:BoundField DataField="mon1nv1" HeaderText="Môn 1 nv1" SortExpression="mon1nv1" />
+                        <asp:BoundField DataField="mon2nv1" HeaderText="Môn 2 nv1" SortExpression="mon2nv1" />
+                        <asp:BoundField DataField="mon3nv1" HeaderText="Môn 3 nv1" SortExpression="mon3nv1" />
+                        <asp:BoundField DataField="mon1nv2" HeaderText="Môn 1 nv2" SortExpression="mon1nv2" />
+                        <asp:BoundField DataField="mon2nv2" HeaderText="Môn 2 nv2" SortExpression="mon2nv2" />
+                        <asp:BoundField DataField="mon3nv2" HeaderText="Môn 3 nv2" SortExpression="mon3nv2" />
+                    </Columns>
+                    <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                    <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                    <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                    <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+                    <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                    <SortedDescendingHeaderStyle BackColor="#242121" />
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" DeleteCommand="DELETE FROM [XetTuyenByHTPTQG] WHERE [cmnd] = @original_cmnd AND (([nv1] = @original_nv1) OR ([nv1] IS NULL AND @original_nv1 IS NULL)) AND (([nv2] = @original_nv2) OR ([nv2] IS NULL AND @original_nv2 IS NULL)) AND (([tohopnv1] = @original_tohopnv1) OR ([tohopnv1] IS NULL AND @original_tohopnv1 IS NULL)) AND (([tohopnv2] = @original_tohopnv2) OR ([tohopnv2] IS NULL AND @original_tohopnv2 IS NULL)) AND (([mon1nv1] = @original_mon1nv1) OR ([mon1nv1] IS NULL AND @original_mon1nv1 IS NULL)) AND (([mon2nv1] = @original_mon2nv1) OR ([mon2nv1] IS NULL AND @original_mon2nv1 IS NULL)) AND (([mon3nv1] = @original_mon3nv1) OR ([mon3nv1] IS NULL AND @original_mon3nv1 IS NULL)) AND (([mon1nv2] = @original_mon1nv2) OR ([mon1nv2] IS NULL AND @original_mon1nv2 IS NULL)) AND (([mon2nv2] = @original_mon2nv2) OR ([mon2nv2] IS NULL AND @original_mon2nv2 IS NULL)) AND (([mon3nv2] = @original_mon3nv2) OR ([mon3nv2] IS NULL AND @original_mon3nv2 IS NULL))" InsertCommand="INSERT INTO [XetTuyenByHTPTQG] ([cmnd], [nv1], [nv2], [tohopnv1], [tohopnv2], [mon1nv1], [mon2nv1], [mon3nv1], [mon1nv2], [mon2nv2], [mon3nv2]) VALUES (@cmnd, @nv1, @nv2, @tohopnv1, @tohopnv2, @mon1nv1, @mon2nv1, @mon3nv1, @mon1nv2, @mon2nv2, @mon3nv2)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [XetTuyenByHTPTQG]" UpdateCommand="UPDATE [XetTuyenByHTPTQG] SET [nv1] = @nv1, [nv2] = @nv2, [tohopnv1] = @tohopnv1, [tohopnv2] = @tohopnv2, [mon1nv1] = @mon1nv1, [mon2nv1] = @mon2nv1, [mon3nv1] = @mon3nv1, [mon1nv2] = @mon1nv2, [mon2nv2] = @mon2nv2, [mon3nv2] = @mon3nv2 WHERE [cmnd] = @original_cmnd AND (([nv1] = @original_nv1) OR ([nv1] IS NULL AND @original_nv1 IS NULL)) AND (([nv2] = @original_nv2) OR ([nv2] IS NULL AND @original_nv2 IS NULL)) AND (([tohopnv1] = @original_tohopnv1) OR ([tohopnv1] IS NULL AND @original_tohopnv1 IS NULL)) AND (([tohopnv2] = @original_tohopnv2) OR ([tohopnv2] IS NULL AND @original_tohopnv2 IS NULL)) AND (([mon1nv1] = @original_mon1nv1) OR ([mon1nv1] IS NULL AND @original_mon1nv1 IS NULL)) AND (([mon2nv1] = @original_mon2nv1) OR ([mon2nv1] IS NULL AND @original_mon2nv1 IS NULL)) AND (([mon3nv1] = @original_mon3nv1) OR ([mon3nv1] IS NULL AND @original_mon3nv1 IS NULL)) AND (([mon1nv2] = @original_mon1nv2) OR ([mon1nv2] IS NULL AND @original_mon1nv2 IS NULL)) AND (([mon2nv2] = @original_mon2nv2) OR ([mon2nv2] IS NULL AND @original_mon2nv2 IS NULL)) AND (([mon3nv2] = @original_mon3nv2) OR ([mon3nv2] IS NULL AND @original_mon3nv2 IS NULL))">
+                    <DeleteParameters>
+                        <asp:Parameter Name="original_cmnd" Type="String" />
+                        <asp:Parameter Name="original_nv1" Type="String" />
+                        <asp:Parameter Name="original_nv2" Type="String" />
+                        <asp:Parameter Name="original_tohopnv1" Type="String" />
+                        <asp:Parameter Name="original_tohopnv2" Type="String" />
+                        <asp:Parameter Name="original_mon1nv1" Type="String" />
+                        <asp:Parameter Name="original_mon2nv1" Type="String" />
+                        <asp:Parameter Name="original_mon3nv1" Type="String" />
+                        <asp:Parameter Name="original_mon1nv2" Type="String" />
+                        <asp:Parameter Name="original_mon2nv2" Type="String" />
+                        <asp:Parameter Name="original_mon3nv2" Type="String" />
+                    </DeleteParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="cmnd" Type="String" />
+                        <asp:Parameter Name="nv1" Type="String" />
+                        <asp:Parameter Name="nv2" Type="String" />
+                        <asp:Parameter Name="tohopnv1" Type="String" />
+                        <asp:Parameter Name="tohopnv2" Type="String" />
+                        <asp:Parameter Name="mon1nv1" Type="String" />
+                        <asp:Parameter Name="mon2nv1" Type="String" />
+                        <asp:Parameter Name="mon3nv1" Type="String" />
+                        <asp:Parameter Name="mon1nv2" Type="String" />
+                        <asp:Parameter Name="mon2nv2" Type="String" />
+                        <asp:Parameter Name="mon3nv2" Type="String" />
+                    </InsertParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="nv1" Type="String" />
+                        <asp:Parameter Name="nv2" Type="String" />
+                        <asp:Parameter Name="tohopnv1" Type="String" />
+                        <asp:Parameter Name="tohopnv2" Type="String" />
+                        <asp:Parameter Name="mon1nv1" Type="String" />
+                        <asp:Parameter Name="mon2nv1" Type="String" />
+                        <asp:Parameter Name="mon3nv1" Type="String" />
+                        <asp:Parameter Name="mon1nv2" Type="String" />
+                        <asp:Parameter Name="mon2nv2" Type="String" />
+                        <asp:Parameter Name="mon3nv2" Type="String" />
+                        <asp:Parameter Name="original_cmnd" Type="String" />
+                        <asp:Parameter Name="original_nv1" Type="String" />
+                        <asp:Parameter Name="original_nv2" Type="String" />
+                        <asp:Parameter Name="original_tohopnv1" Type="String" />
+                        <asp:Parameter Name="original_tohopnv2" Type="String" />
+                        <asp:Parameter Name="original_mon1nv1" Type="String" />
+                        <asp:Parameter Name="original_mon2nv1" Type="String" />
+                        <asp:Parameter Name="original_mon3nv1" Type="String" />
+                        <asp:Parameter Name="original_mon1nv2" Type="String" />
+                        <asp:Parameter Name="original_mon2nv2" Type="String" />
+                        <asp:Parameter Name="original_mon3nv2" Type="String" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
+            </div>
+        </div>
+ 
+</asp:Content>
 
-
-        </div>             
-    </form>
-    <script src="../Scripts/jquery-3.5.1.slim.min.js" type="text/javascript"></script>
-    <script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../Scripts/popper.min.js" type="text/javascript"></script>
-</body>
-</html>
+       

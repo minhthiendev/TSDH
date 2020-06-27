@@ -15,7 +15,8 @@ namespace TSDH.web.Application
             bundles.Add(new ScriptBundle("~/bundles/BootstrapJs").Include(
                             "~/Scripts/bootstrap.min.js",
                             "~/Scripts/jquery-3.5.1.slim.min.js",
-                            "~/Scripts/popper.min.js"
+                            "~/Scripts/popper.min.js",
+                            "~/Scripts/mdb.js"
                            ));
 
         }
