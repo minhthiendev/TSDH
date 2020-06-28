@@ -7,14 +7,24 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="/admin/dashboard">Dashboard</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/admin/ThongTinThiSinh">Hồ sơ thí sinh</a>
-                </li>
+               
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/HocBa">Học Bạ</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/THPTQG">THPT Quốc Gia</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/admin/THPTQG">Trúng tuyển</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/THPTQG">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/THPTQG">Users</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="/admin/THPTQG">Ngành tuyển sinh</a>
                 </li>
             </ul>
         </div>

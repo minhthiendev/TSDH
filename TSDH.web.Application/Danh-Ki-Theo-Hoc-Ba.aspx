@@ -92,23 +92,24 @@
                 <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hokhau" placeholder="Hộ Khẩu thường Trú" />
                 <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="doituongUT" placeholder="Đối tượng Ưu tiên" required />
 
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="email" placeholder="Email" required/>
+                <input type="email" class="form-control col-md-5 col-md-4 m-3 " name="email" placeholder="Email" required/>
                 <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="phone" placeholder="Số điện thoại" required/>
                 <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="namtotnghiep" placeholder="Năm tốt nghiệp" required/>
                 <div class="col-md-5 col-md-4 m-3 "></div>
 
 
-                <div class="row">
-                    <label class="col-md-2 m-2 ">Lớp 10 </label>
-                    <input type="text" class="form-control col-md-2 m-2" name="hk10" placeholder="Hạnh kiểm" required/>
+                <div class="row px-5">
+                    
+                    <label class="col-md-1 m-2 ">Lớp 10 </label>
+                    <input type="text" class="form-control col-md-3 m-2" name="hk10" placeholder="Hạnh kiểm" required/>
                     <input type="text" class="form-control col-md-7 m-2" name="truong10" placeholder="Tên trường" required/>
 
-                    <label class="col-md-2 m-2 ">Lớp 11  </label>
-                    <input type="text" class="form-control col-md-2 m-2" name="hk11" placeholder="Hạnh kiểm" required/>
+                    <label class="col-md-1 m-2 ">Lớp 11  </label>
+                    <input type="text" class="form-control col-md-3 m-2" name="hk11" placeholder="Hạnh kiểm" required/>
                     <input type="text" class="form-control col-md-7 m-2" name="truong11" placeholder="Tên trường" required/>
 
-                    <label class="col-md-2 m-2 ">Lớp 12 </label>
-                    <input type="text" class="form-control col-md-2 m-2" name="hk12" placeholder="Hạnh kiểm" required/>
+                    <label class="col-md-1 m-2 ">Lớp 12 </label>
+                    <input type="text" class="form-control col-md-3 m-2" name="hk12" placeholder="Hạnh kiểm" required/>
                     <input type="text" class="form-control col-md-7 m-2" name="truong12" placeholder="Tên trường" required/>
                 </div>
             </div>
@@ -116,11 +117,9 @@
                 <h3 class="py-5">Nguyện vọng</h3>
             </div>
             <div class="row d-flex justify-content-md-center">
-                <div class="form-control col-md-4 mr-2">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="100%" CssClass="border-0">
-                        <asp:ListItem>Chọn Ngành</asp:ListItem>
-                    </asp:DropDownList>
-                </div>
+              
+                  <input class="form-control col-md-4 mr-2" type="text" placeholder="Điền mã Ngành" name="nv" required/>
+                
                 <select class="form-control col-md-3" onchange="subjectChanged(this)" name="tohop">
                     <option selected>Chọn tổ hợp môn</option>
                     <option value="A00">A00</option>

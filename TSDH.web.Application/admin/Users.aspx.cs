@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TSDH.web.Application.admin
 {
-    public partial class studentDetail : System.Web.UI.Page
+    public partial class WebForm4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

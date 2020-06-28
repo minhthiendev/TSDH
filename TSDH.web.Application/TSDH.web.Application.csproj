@@ -206,10 +206,12 @@
   <ItemGroup>
     <Content Include="admin\dashboard.aspx" />
     <Content Include="admin\HocBa.aspx" />
-    <Content Include="admin\studentDetail.aspx" />
+    <Content Include="admin\nganh.aspx" />
     <Content Include="admin\THPTQG.aspx" />
-    <Content Include="admin\ThongTinThiSinh.aspx" />
-    <Content Include="admin\WebForm2.aspx" />
+    <Content Include="admin\TrungTuyen.aspx" />
+    <Content Include="admin\Detail.aspx" />
+    <Content Include="admin\contacts.aspx" />
+    <Content Include="admin\Users.aspx" />
     <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fontawesome5.13.0\css\all.css" />
@@ -1848,7 +1850,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="admin\NewUser.aspx" />
     <Content Include="Dang-Ki-Theo-KQTHPTQG.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="images\Baner_TuyenSinh_2020.png" />
@@ -1907,26 +1908,40 @@
     <Compile Include="admin\admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="admin\studentDetail.aspx.cs">
-      <DependentUpon>studentDetail.aspx</DependentUpon>
+    <Compile Include="admin\nganh.aspx.cs">
+      <DependentUpon>nganh.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\studentDetail.aspx.designer.cs">
-      <DependentUpon>studentDetail.aspx</DependentUpon>
+    <Compile Include="admin\nganh.aspx.designer.cs">
+      <DependentUpon>nganh.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\ThongTinThiSinh.aspx.cs">
-      <DependentUpon>ThongTinThiSinh.aspx</DependentUpon>
+    <Compile Include="admin\TrungTuyen.aspx.cs">
+      <DependentUpon>TrungTuyen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\ThongTinThiSinh.aspx.designer.cs">
-      <DependentUpon>ThongTinThiSinh.aspx</DependentUpon>
+    <Compile Include="admin\TrungTuyen.aspx.designer.cs">
+      <DependentUpon>TrungTuyen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="admin\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="admin\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -1961,13 +1976,6 @@
     <Compile Include="DataConnection.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="admin\NewUser.aspx.cs">
-      <DependentUpon>NewUser.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin\NewUser.aspx.designer.cs">
-      <DependentUpon>NewUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dang-Ki-Theo-KQTHPTQG.aspx.cs">
       <DependentUpon>Dang-Ki-Theo-KQTHPTQG.aspx</DependentUpon>

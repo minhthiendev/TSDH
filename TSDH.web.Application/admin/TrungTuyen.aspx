@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Thông tin tuyển sinh" Language="C#" MasterPageFile="~/admin/admin.Master" AutoEventWireup="true" CodeBehind="ThongTinThiSinh.aspx.cs" Inherits="TSDH.web.Application.admin.WebForm1" %>
+﻿<%@ Page Title="Thông tin tuyển sinh" Language="C#" MasterPageFile="~/admin/admin.Master" AutoEventWireup="true" CodeBehind="TrungTuyen.aspx.cs" Inherits="TSDH.web.Application.admin.WebForm1" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
 
