@@ -183,7 +183,7 @@ namespace TSDH.web.Application
                 }
                 else
                 {
-                    Response.Write("<script> alert('your info is existed !!!')</script>");
+                    Response.Write("<script> alert('Mỗi thí sinhchỉ được đăng kí 1 lần !!!')</script>");
                 }
             }
             catch

@@ -1,7 +1,9 @@
 ﻿a {
     color: white;
 }
-
+.navbar,.xx {
+    background: #060603!important;
+}
 a:hover {
     color: hotpink;
 }
@@ -12,5 +14,16 @@ a:hover {
 }
 .grid-view {
     width: 100% !important;
-    overflow-x: scroll !important;
+    /*overflow-x: scroll !important;*/
+}
+.title{
+    background:#060603;
+    color:hotpink;
+    text-align:center;
+}
+.content {
+    background: hotpink;
+    color: #060603;
+    font-weight: bold;
+    text-align: center;
 }

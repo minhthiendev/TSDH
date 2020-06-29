@@ -8,6 +8,9 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
     <style>
+        .container-fluid{
+            width:100%!important;
+        }
        nav a {
             color: #a6bff1 !important;
             padding: 0 20px !important;
@@ -21,9 +24,9 @@
 </head>
 
 <body>
-    <form runat="server" id="homepage">
+    <form runat="server" id="homepage" class="container-fluid" >
         <!--nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class=" row navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
 
             <a class="navbar-brand" href="#">
                 <img src="/images/logo.png" alt="" height="100" /></a>
@@ -63,7 +66,7 @@
 
         <!--end nav -->
         <!--carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide row" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

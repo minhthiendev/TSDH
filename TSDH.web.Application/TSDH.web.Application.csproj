@@ -209,9 +209,11 @@
     <Content Include="admin\nganh.aspx" />
     <Content Include="admin\THPTQG.aspx" />
     <Content Include="admin\TrungTuyen.aspx" />
-    <Content Include="admin\Detail.aspx" />
+    <Content Include="admin\DetailHocBa.aspx" />
     <Content Include="admin\contacts.aspx" />
     <Content Include="admin\Users.aspx" />
+    <Content Include="admin\DetailTHPTQG.aspx" />
+    <Content Include="admin\DetailTrungTuyen.aspx" />
     <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fontawesome5.13.0\css\all.css" />
@@ -1922,12 +1924,12 @@
     <Compile Include="admin\TrungTuyen.aspx.designer.cs">
       <DependentUpon>TrungTuyen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\Detail.aspx.cs">
-      <DependentUpon>Detail.aspx</DependentUpon>
+    <Compile Include="admin\DetailHocBa.aspx.cs">
+      <DependentUpon>DetailHocBa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\Detail.aspx.designer.cs">
-      <DependentUpon>Detail.aspx</DependentUpon>
+    <Compile Include="admin\DetailHocBa.aspx.designer.cs">
+      <DependentUpon>DetailHocBa.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\contacts.aspx.cs">
       <DependentUpon>contacts.aspx</DependentUpon>
@@ -1942,6 +1944,20 @@
     </Compile>
     <Compile Include="admin\Users.aspx.designer.cs">
       <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DetailTHPTQG.aspx.cs">
+      <DependentUpon>DetailTHPTQG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DetailTHPTQG.aspx.designer.cs">
+      <DependentUpon>DetailTHPTQG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DetailTrungTuyen.aspx.cs">
+      <DependentUpon>DetailTrungTuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DetailTrungTuyen.aspx.designer.cs">
+      <DependentUpon>DetailTrungTuyen.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

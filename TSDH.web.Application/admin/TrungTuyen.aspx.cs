@@ -26,20 +26,18 @@ namespace TSDH.web.Application.admin
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
 
-            System.Diagnostics.Debug.WriteLine("---------------------");
-            if (e.CommandName.Equals("Select"))
+            if (e.CommandName.Equals("view"))
             {
-              
+
+
                 int index = Convert.ToInt32(e.CommandArgument);
-                
                 GridViewRow row = GridView1.Rows[index];
-                Session["cmnd"] = row.Cells[0].Text;
-                System.Diagnostics.Debug.WriteLine("---------------------" + index + row.Cells[0].Text);
-                Response.Redirect("studentDetail.aspx");
+
+                Session["cmnd"] = row.Cells[2].Text;
+                Response.Redirect("DetailTrungTuyen.aspx");
 
 
             }
-
         }
 
     

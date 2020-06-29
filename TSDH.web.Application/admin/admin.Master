@@ -16,10 +16,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark row p-0">
-                <div class="col-md-2"></div>
-                <div class="col-md-10 py-2 border-left">
+        <div class="container-fluid sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark row p-0 border ">
+                <div class="col-md-2 ">
+                    <h3 class="text-success">Administrator</h3>
+                </div>
+                <div class="col-md-10 py-2 ">
                     <ul class="nav collapse navbar-collapse d-flex justify-content-end">
                         <li class="nav-item dropdown ">
                             <a class="nav-link" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -27,8 +29,10 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right  p-0 d">
                                 <div class="d-flex">
-                                    <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search" style="width: 200px" />
-                                    <button class="btn btn-outline-secondary"><i class="fas fa-search"></i></button>
+                                    <input class="form-control border-0" type="search" placeholder="Search" aria-label="Search" style="width: 200px" name="search"/>
+
+                                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-outline-secondary" OnClick="search">
+                                <i class="fas fa-search"></i></asp:LinkButton>
                                 </div>
 
                             </div>

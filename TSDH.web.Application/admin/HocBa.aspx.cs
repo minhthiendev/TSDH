@@ -21,5 +21,22 @@ namespace TSDH.web.Application.Con_lau_moi_tim_duoc_trang_admin_nay_nha
         {
 
         }
+        
+        protected void GridView2_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+            if (e.CommandName.Equals("view"))
+            {
+
+
+                int index=Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = GridView2.Rows[index];
+
+                Session["cmnd"]= row.Cells[2].Text;
+                Response.Redirect("DetailHocBa.aspx");
+
+
+            }
+        }
     }
 }

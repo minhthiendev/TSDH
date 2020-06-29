@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row" style="height: 90vh;">
-        <div class="col-md-2 bg-dark ">
+        <div class="col-md-2 xx border">
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" href="/admin/dashboard">Dashboard</a>
@@ -15,20 +15,20 @@
                     <a class="nav-link" href="/admin/THPTQG">THPT Quốc Gia</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="/admin/THPTQG">Trúng tuyển</a>
+                    <a class="nav-link" href="/admin/TrungTuyen">Trúng tuyển</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/THPTQG">Contact</a>
+                    <a class="nav-link" href="/admin/contacts">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/THPTQG">Users</a>
+                    <a class="nav-link" href="/admin/Users">Users</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="/admin/THPTQG">Ngành tuyển sinh</a>
+                    <a class="nav-link" href="/admin/nganh">Ngành tuyển sinh</a>
                 </li>
             </ul>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 grid-view">
             <div class="col-md-12 my-5">
             </div>
             <canvas id="myChart" style="width: 100%;"></canvas>
