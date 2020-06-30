@@ -13,7 +13,8 @@ namespace TSDH.web.Application.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //string current_url = HttpContext.Current.Request.Url.AbsolutePath;
+            //Label1.Text = current_url;
         }
 
         protected void search(object sender, EventArgs e)
