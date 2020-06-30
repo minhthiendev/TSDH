@@ -128,9 +128,9 @@ namespace TSDH.web.Application
             string images12 = FileUpload3.FileName;
             FileUpload1.SaveAs(MapPath("/Upload/" + cmnd + "-" + images12));
 
-            float mon1 = (float.Parse(m1101) + float.Parse(m1102) + float.Parse(m1111) + float.Parse(m1112) + float.Parse(m1121));
-            float mon2 = (float.Parse(m2101) + float.Parse(m2102) + float.Parse(m2111) + float.Parse(m2112) + float.Parse(m2121));
-            float mon3 = (float.Parse(m3101) + float.Parse(m3102) + float.Parse(m3111) + float.Parse(m3112) + float.Parse(m3121));
+            float mon1 = (float.Parse(m1101) + float.Parse(m1102) + float.Parse(m1111) + float.Parse(m1112) + float.Parse(m1121))/5;
+            float mon2 = (float.Parse(m2101) + float.Parse(m2102) + float.Parse(m2111) + float.Parse(m2112) + float.Parse(m2121))/5;
+            float mon3 = (float.Parse(m3101) + float.Parse(m3102) + float.Parse(m3111) + float.Parse(m3112) + float.Parse(m3121))/5;
 
             float diem = mon1 + mon2 + mon3 + get_diemUT(doituongUT);
 

@@ -31,10 +31,14 @@
         </div>
         <div class="col-md-10 grid-view">
            
-
+             <div class="col-md-12">
+                <h3 ><a class="btn btn-outline-success" href="/admin/addnganh"><i class="fas fa-user-plus"></i></a></h3>
+            </div>
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="manganh" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" Width="100%">
                 <Columns>
-                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" ButtonType="Image" CancelImageUrl="~/images/cancel.jpg" DeleteImageUrl="~/images/del_icon.png" EditImageUrl="~/images/edit_icon.png" SelectImageUrl="~/images/select.png" UpdateImageUrl="~/images/check.jpg" >
+                    <ControlStyle Width="30px" />
+                    </asp:CommandField>
                     <asp:BoundField DataField="manganh" HeaderText="manganh" ReadOnly="True" SortExpression="manganh" />
                     <asp:BoundField DataField="tennganh" HeaderText="tennganh" SortExpression="tennganh" />
                     <asp:BoundField DataField="chitieu" HeaderText="chitieu" SortExpression="chitieu" />

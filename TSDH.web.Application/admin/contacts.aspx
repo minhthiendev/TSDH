@@ -30,7 +30,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 p-3 grid-view">
             <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="id" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal"  Width="100%">
                 <Columns>
                     <asp:CommandField ButtonType="Image" CancelImageUrl="~/images/cancel.jpg" DeleteImageUrl="~/images/del_icon.png" EditImageUrl="~/images/edit_icon.png" ShowDeleteButton="True" ShowEditButton="True" UpdateImageUrl="~/images/check.jpg">

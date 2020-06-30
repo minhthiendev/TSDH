@@ -26,7 +26,7 @@ namespace TSDH.web.Application
             DataConnection dataConect = new DataConnection();
             SqlConnection sqlconnect = dataConect.getConnect();
             sqlconnect.Open();
-            System.Diagnostics.Debug.WriteLine("--------------1-----------------" + username + password);
+           
             string sql = "SELECT *  FROM Admin where username='" + username + "' and password='"+ password+"'";
             SqlDataAdapter sqlda = new SqlDataAdapter(sql, sqlconnect);
             DataTable myDataTable = new DataTable();
@@ -40,7 +40,8 @@ namespace TSDH.web.Application
             }
             else
             {
-                Response.Redirect("Login.aspx");
+                Response.Write("<script> alert('Username/passord incorrect')</script>");
+               
             }
 
             sqlconnect.Close();

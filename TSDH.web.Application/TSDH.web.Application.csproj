@@ -214,6 +214,10 @@
     <Content Include="admin\Users.aspx" />
     <Content Include="admin\DetailTHPTQG.aspx" />
     <Content Include="admin\DetailTrungTuyen.aspx" />
+    <Content Include="admin\adduser.aspx" />
+    <Content Include="admin\addnganh.aspx" />
+    <Content Include="admin\profile.aspx" />
+    <Content Include="admin\changepassword.aspx" />
     <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\fontawesome5.13.0\css\all.css" />
@@ -1854,6 +1858,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Dang-Ki-Theo-KQTHPTQG.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="images\add.PNG" />
     <Content Include="images\Baner_TuyenSinh_2020.png" />
     <Content Include="images\Banner.jpg" />
     <Content Include="images\bg.png" />
@@ -1958,6 +1963,34 @@
     </Compile>
     <Compile Include="admin\DetailTrungTuyen.aspx.designer.cs">
       <DependentUpon>DetailTrungTuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adduser.aspx.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adduser.aspx.designer.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\addnganh.aspx.cs">
+      <DependentUpon>addnganh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addnganh.aspx.designer.cs">
+      <DependentUpon>addnganh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\changepassword.aspx.designer.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

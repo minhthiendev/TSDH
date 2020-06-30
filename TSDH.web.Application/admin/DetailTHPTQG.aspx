@@ -98,7 +98,7 @@
                 <asp:Label ID="Label213" runat="server" Text="Điểm" CssClass="form-control col-md-2 my-1 title"></asp:Label>
                 <asp:Label ID="diem2" runat="server" Text="30" CssClass="form-control col-md-1 my-1 content" Style="left: 0px; top: 0px"></asp:Label>
 
-                 <div class="col-md-12 text-center">
+                 <div class="col-md-12 text-center m-3">
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Xác nhận Trúng Tuyển"  CssClass="btn btn-outline-success" />
 
                 </div>

@@ -66,7 +66,48 @@ namespace TSDH.web.Application.admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string nganh = "";
+                DataConnection dataConect = new DataConnection();
+                SqlConnection sqlconnect = dataConect.getConnect();
+                sqlconnect.Open();
 
+                string sql1 = "select tennganh from NganhTuyenSinh where manganh='" + nv.Text + "'";
+                SqlDataAdapter sqlda = new SqlDataAdapter(sql1, sqlconnect);
+                DataTable myDataTable = new DataTable();
+                sqlda.Fill(myDataTable);
+
+                if (myDataTable.Rows.Count > 0)
+                {
+                    nganh = myDataTable.Rows[0][0].ToString();
+                }
+                string sql = "insert into TrungTuyen values(@cmnd,@hoten,@ngaysinh,@gioitinh,@noisinh,@dantoc,@hokhau," +
+                "@doituongUT,@email,@phone,@Nganh,@Diemtrungtuyen,@hinhthucdkxt)";
+                SqlCommand scm = new SqlCommand(sql, sqlconnect);
+                scm.Parameters.Add("@cmnd", SqlDbType.NChar).Value = cmnd.Text;
+                scm.Parameters.Add("@hoten", SqlDbType.NVarChar).Value = hoten.Text;
+                scm.Parameters.Add("@ngaysinh", SqlDbType.Date).Value = ngaysinh.Text;
+                scm.Parameters.Add("@gioitinh", SqlDbType.NVarChar).Value = gioitinh.Text;
+                scm.Parameters.Add("@noisinh", SqlDbType.NVarChar).Value = noisinh.Text;
+                scm.Parameters.Add("@dantoc", SqlDbType.NVarChar).Value = dantoc.Text;
+                scm.Parameters.Add("@hokhau", SqlDbType.NVarChar).Value = hokhau.Text;
+                scm.Parameters.Add("@doituongUT", SqlDbType.NVarChar).Value = dtut.Text;
+                scm.Parameters.Add("@email", SqlDbType.NVarChar).Value = email.Text;
+                scm.Parameters.Add("@phone", SqlDbType.NVarChar).Value = phone.Text;
+                scm.Parameters.Add("@Nganh", SqlDbType.NVarChar).Value = nganh;
+                scm.Parameters.Add("@Diemtrungtuyen", SqlDbType.NVarChar).Value = diem.Text;
+                scm.Parameters.Add("@hinhthucdkxt", SqlDbType.NVarChar).Value = "HOCBA";
+                scm.ExecuteNonQuery();
+
+                sqlconnect.Close();
+                Response.Write("<script> alert('Xác nhận thành công')</script>");
+            }
+            catch
+            {
+                Response.Write("<script> alert('Thí sinh này đã có trong danh sách trúng tuyển')</script>");
+            }
+           
         }
     }
 }
