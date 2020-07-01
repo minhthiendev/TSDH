@@ -131,15 +131,18 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Danh sách các ngành</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="manganh" DataValueField="manganh" Width="100%"></asp:ListBox>
-
-                                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" SelectCommand="SELECT [manganh], [tennganh] FROM [NganhTuyenSinh]"></asp:SqlDataSource>
+                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="manganh" DataSourceID="SqlDataSource3" Width="100%">
+                                    <Columns>
+                                        <asp:BoundField DataField="manganh" HeaderText="Mã ngành" ReadOnly="True" SortExpression="manganh" />
+                                        <asp:BoundField DataField="tennganh" HeaderText="Tên Ngành" SortExpression="tennganh" />
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -180,14 +183,18 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabe2">Modal title</h5>
+                                <h5 class="modal-title" id="exampleModalLabe2">Danh sách các ngành</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <asp:ListBox ID="ListBox3" runat="server"  DataSourceID="SqlDataSource1" DataTextField="manganh" DataValueField="manganh" Width="100%"></asp:ListBox>
-                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" SelectCommand="SELECT [manganh], [tennganh] FROM [NganhTuyenSinh]"></asp:SqlDataSource>
+                                <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="manganh" DataSourceID="SqlDataSource3" Width="100%">
+                                    <Columns>
+                                        <asp:BoundField DataField="manganh" HeaderText="Mã Ngành" ReadOnly="True" SortExpression="manganh" />
+                                        <asp:BoundField DataField="tennganh" HeaderText="Tên Ngành" SortExpression="tennganh" />
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -365,12 +372,7 @@
 
         </script>
 
-
-
-
-
-
-
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" SelectCommand="SELECT [manganh], [tennganh] FROM [NganhTuyenSinh]"></asp:SqlDataSource>
 
     </form>
 </body>
