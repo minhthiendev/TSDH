@@ -61,8 +61,8 @@
                 <div class="col-md-12 text-center ">
                     <h3>Thông tin cá nhân</h3>
                 </div>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " id="cmnd" name="cmnd" placeholder="Số CMND" required/>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hoten" placeholder="Họ tên" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " id="cmnd" name="cmnd" placeholder="Số CMND" required />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hoten" placeholder="Họ tên" required />
 
                 <div class="col-md-5 col-md-5 m-3 form-control">
                     Giới tính : &nbsp;&nbsp;
@@ -80,36 +80,36 @@
                     <div class="row">
                         <div class="col-12">
                             <label class="col-md-3">Ngày Sinh : </label>
-                            <input type="date" name="ngaysinh" class="col-md-8 px-0 border-0" required/>
+                            <input type="date" name="ngaysinh" class="col-md-8 px-0 border-0" required />
                         </div>
 
                     </div>
 
                 </div>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="noisinh" placeholder="Nơi sinh" title="" required/>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="dantoc" placeholder="Dân tộc" title="" required/>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hokhau" placeholder="Hộ Khẩu thường Trú" required/>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="doituongUT" placeholder="Đối tượng Ưu tiên" required/>
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="noisinh" placeholder="Nơi sinh" title="" required />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="dantoc" placeholder="Dân tộc" title="" required />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="hokhau" placeholder="Hộ Khẩu thường Trú" required />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="doituongUT" placeholder="Đối tượng Ưu tiên" required />
 
-                <input type="email" class="form-control col-md-5 col-md-4 m-3 " name="email" placeholder="Email" required/>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="phone" placeholder="Số điện thoại" required/>
-                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="namtotnghiep" placeholder="Năm tốt nghiệp" required/>
+                <input type="email" class="form-control col-md-5 col-md-4 m-3 " name="email" placeholder="Email" required />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="phone" placeholder="Số điện thoại" required />
+                <input type="text" class="form-control col-md-5 col-md-4 m-3 " name="namtotnghiep" placeholder="Năm tốt nghiệp" required />
                 <div class="col-md-5 col-md-4 m-3 "></div>
 
 
                 <div class="row px-5">
-                    
+
                     <label class="col-md-1 m-2 ">Lớp 10 </label>
-                    <input type="text" class="form-control col-md-3 m-2" name="hk10" placeholder="Hạnh kiểm" required/>
-                    <input type="text" class="form-control col-md-7 m-2" name="truong10" placeholder="Tên trường" required/>
+                    <input type="text" class="form-control col-md-3 m-2" name="hk10" placeholder="Hạnh kiểm" required />
+                    <input type="text" class="form-control col-md-7 m-2" name="truong10" placeholder="Tên trường" required />
 
                     <label class="col-md-1 m-2 ">Lớp 11  </label>
-                    <input type="text" class="form-control col-md-3 m-2" name="hk11" placeholder="Hạnh kiểm" required/>
-                    <input type="text" class="form-control col-md-7 m-2" name="truong11" placeholder="Tên trường" required/>
+                    <input type="text" class="form-control col-md-3 m-2" name="hk11" placeholder="Hạnh kiểm" required />
+                    <input type="text" class="form-control col-md-7 m-2" name="truong11" placeholder="Tên trường" required />
 
                     <label class="col-md-1 m-2 ">Lớp 12 </label>
-                    <input type="text" class="form-control col-md-3 m-2" name="hk12" placeholder="Hạnh kiểm" required/>
-                    <input type="text" class="form-control col-md-7 m-2" name="truong12" placeholder="Tên trường" required/>
+                    <input type="text" class="form-control col-md-3 m-2" name="hk12" placeholder="Hạnh kiểm" required />
+                    <input type="text" class="form-control col-md-7 m-2" name="truong12" placeholder="Tên trường" required />
                 </div>
             </div>
             <div class="col-md-12 text-center ">
@@ -119,9 +119,35 @@
             <div class="row d-flex justify-content-md-center my-3">
 
                 <label class="col-md-2 text-center py-2">Nguyện vọng 1 : </label>
-                <input class="form-control col-md-5 col-md-4 mr-2" type="text" placeholder="Điền mã Ngành" name="nv1" required/>
-                   
-         
+                <input class="form-control col-md-3" type="text" placeholder="Điền mã Ngành" name="nv1" required />
+                <div class=" col-md-2 ">
+                    <!-- Button trigger modal -->
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Xem Ngành
+                    </a>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="manganh" DataValueField="manganh" Width="100%"></asp:ListBox>
+
+                                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" SelectCommand="SELECT [manganh], [tennganh] FROM [NganhTuyenSinh]"></asp:SqlDataSource>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <select class="form-control col-md-3" onchange="subjectChanged(this)" name="tohop1">
                     <option selected>Chọn tổ hợp môn</option>
                     <option value="A00">A00</option>
@@ -132,17 +158,44 @@
                 </select>
                 <div class="row">
                     <label id="subject1nv1" class="col-md-2">Môn 1 : </label>
-                    <input type="text" class="form-control col-md-2" placeholder="Nhập điểm" name="m1nv1" required/>
+                    <input type="text" class="form-control col-md-2" placeholder="Nhập điểm" name="m1nv1" required />
                     <label id="subject2nv1" class="col-md-2">Môn 1 : </label>
-                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm"name="m2nv1" required/>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m2nv1" required />
                     <label id="subject3nv1" class="col-md-2">Môn 1 : </label>
-                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm " name="m3nv1" required/>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm " name="m3nv1" required />
                 </div>
 
             </div>
             <div class="row d-flex justify-content-md-center my-3">
                 <label class="col-md-2 py-2 text-center">Nguyện vọng 2 : </label>
-                  <input class="form-control col-md-5 col-md-4 mr-2" type="text" placeholder="Điền mã Ngành" name="nv2" required/>
+                <input class="form-control col-md-3 mr-2" type="text" placeholder="Điền mã Ngành" name="nv2" required />
+                <div class=" col-md-2 ">
+                    <!-- Button trigger modal -->
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModa2">Xem Ngành
+                    </a>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabe2">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <asp:ListBox ID="ListBox3" runat="server"  DataSourceID="SqlDataSource1" DataTextField="manganh" DataValueField="manganh" Width="100%"></asp:ListBox>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" SelectCommand="SELECT [manganh], [tennganh] FROM [NganhTuyenSinh]"></asp:SqlDataSource>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <select class="form-control col-md-3" onchange="subjectChanged2(this)" name="tohop2">
                     <option selected>Chọn tổ hợp môn</option>
                     <option value="A00">A00</option>
@@ -153,11 +206,11 @@
                 </select>
                 <div class="row">
                     <label id="subject1nv2" class="col-md-2">Môn 1 : </label>
-                    <input type="text" class="form-control col-md-2" placeholder="Nhập điểm"  name="m1nv2" required/>
+                    <input type="text" class="form-control col-md-2" placeholder="Nhập điểm" name="m1nv2" required />
                     <label id="subject2nv2" class="col-md-2">Môn 1 : </label>
-                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m2nv2" required/>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m2nv2" required />
                     <label id="subject3nv2" class="col-md-2">Môn 1 : </label>
-                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m3nv2" required/>
+                    <input type="text" class="form-control col-md-2 " placeholder="Nhập điểm" name="m3nv2" required />
                 </div>
 
             </div>
@@ -311,6 +364,10 @@
             }
 
         </script>
+
+
+
+
 
 
 

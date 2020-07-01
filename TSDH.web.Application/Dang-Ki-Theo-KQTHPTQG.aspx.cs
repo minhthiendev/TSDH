@@ -15,8 +15,7 @@ namespace TSDH.web.Application
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
+           
         }
 
         bool check_exist_info(string cmnd)

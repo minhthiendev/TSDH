@@ -114,12 +114,39 @@
                 </div>
             </div>
             <div class="col-md-12 text-center ">
-                <h3 class="py-5">Nguyện vọng</h3>
+                <h3 class="py-5">Nguyện vọng
+                </h3>
             </div>
             <div class="row d-flex justify-content-md-center">
               
                   <input class="form-control col-md-4 mr-2" type="text" placeholder="Điền mã Ngành" name="nv" required/>
-                
+                <div class=" col-md-2 ">
+                    <!-- Button trigger modal -->
+                    <a class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Xem Ngành
+                    </a>
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                               <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="manganh" DataValueField="manganh" Width="100%"></asp:ListBox>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TSDHConnectionString %>" SelectCommand="SELECT [manganh], [tennganh] FROM [NganhTuyenSinh]"></asp:SqlDataSource>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <select class="form-control col-md-3" onchange="subjectChanged(this)" name="tohop">
                     <option selected>Chọn tổ hợp môn</option>
                     <option value="A00">A00</option>
